@@ -2,11 +2,10 @@ package main
 
 import java.math.BigDecimal
 
-class Funcionario(
-    override var nome: String,
-    override var cpf: String,
+abstract class Funcionario(
+    nome: String,
+    cpf: String,
     var salario: BigDecimal
-): Pessoa(nome,cpf) {
-
-
+): Pessoa() {
+    fun calculoAuxilio(){}
 }
