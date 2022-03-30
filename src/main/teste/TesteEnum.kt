@@ -5,11 +5,15 @@ import main.ClienteTipo
 fun main(){
     ClienteTipo.values().forEach {
         element ->
-        println("${element.name} e ${element.toString()}")
+       // println("${element.name} e ${element.descriçao}")
     }
 
     ClienteTipo.values().forEach {
-            println("${it.name} e ${it.toString()}")
+       //     println("${it.name} e ${it.descriçao}")
     }
 
+     var tipo = ClienteTipo.PF
+    println("${tipo.name} e ${tipo.descriçao}")
+    tipo = ClienteTipo.PJ
+    println("${tipo.name} e ${tipo.descriçao}")
 }

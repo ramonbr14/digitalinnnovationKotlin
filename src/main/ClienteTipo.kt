@@ -1,6 +1,6 @@
 package main
 
-enum class ClienteTipo(s: String) {
+enum class ClienteTipo(val descriçao: String) {
     PF("Pessoa fisica"),
     PJ("Pessoa juridica")
 }
