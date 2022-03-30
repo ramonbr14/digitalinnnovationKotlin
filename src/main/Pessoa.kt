@@ -1,21 +1,9 @@
 package main
 
-class Pessoa {
+open class Pessoa {
+    constructor(nome: String, cpf: String)
 
-    var nome: String = "Rainha Elsa de Arendelle"
-    var cpf: String = "123.456.789-00"
-    //private set
+    open var nome: String = ""
+    open var cpf: String = ""
 
-    constructor()
-
-    fun pessoainfo() = "$nome " + "$cpf"
 }
-
-fun main(){
-    var elsa = Pessoa()
-    //elsa.cpf = "ABC.DEF.GHI-JK"
-
-    println(elsa.pessoainfo())
-}
-
-
