@@ -4,7 +4,7 @@ abstract class Funcionario(
     nome: String,
     cpf: String,
     val salario: Double,
-): Pessoa(nome, cpf) {
+) : Pessoa(nome, cpf) {
     protected abstract fun calculoAuxilio(): Double
 
     override fun toString(): String {
@@ -12,6 +12,6 @@ abstract class Funcionario(
                 "nome: $nome" +
                 "CPF: $cpf" +
                 "Salario: $salario" +
-                "Auxilio: ${calculoAuxilio()}"
+                "Auxilio: ${calculoAuxilio()}".trimIndent()
     }
 }
