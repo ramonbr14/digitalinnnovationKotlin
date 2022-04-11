@@ -1,9 +1,9 @@
 package main
 
-abstract class Pessoa {
+abstract class Pessoa(nome: String, cpf: String) {
+    //constructor(nome: String, cpf: String)
 
-    abstract var nome: String
-    abstract var cpf: String
+    val nome: String = ""
+    val cpf: String = ""
 
-    constructor(nome: String, cpf: String)
 }

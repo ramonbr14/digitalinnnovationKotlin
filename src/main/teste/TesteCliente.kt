@@ -1,4 +1,4 @@
-import main.ClienteTipo
+import main.cargos.ClienteTipo
 import main.cargos.Cliente
 import main.teste.TesteAutenticacao
 

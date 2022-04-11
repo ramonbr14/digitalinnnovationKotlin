@@ -7,13 +7,13 @@ class Analista(
     nome: String,
     cpf: String,
     salario: Double
-): Funcionario(nome = nome,cpf = cpf ,salario = salario){
+): Funcionario(nome, cpf, salario) {
 
-    override fun calculoAuxilio() = salario + (salario* 0.1)
-    override var nome: String
+   // override fun calculoAuxilio(): Double  = salario * 0.1
+    /*override var nome: String
         get() = TODO("Not yet implemented")
         set(value) {}
     override var cpf: String
         get() = TODO("Not yet implemented")
-        set(value) {}
+        set(value) {}*/
 }

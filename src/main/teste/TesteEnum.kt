@@ -1,6 +1,6 @@
 package main.teste
 
-import main.ClienteTipo
+import main.cargos.ClienteTipo
 
 fun main(){
     ClienteTipo.values().forEach {

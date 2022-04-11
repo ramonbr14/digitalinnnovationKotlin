@@ -7,12 +7,12 @@ class Gerente(
     nome: String,
     cpf: String,
     salario: Double,
-    val senha: String,
-) : Funcionario(nome = nome,cpf = cpf, salario = salario), Logavel {
-    override fun calculoAuxilio() = salario + (salario* 0.1)
+    val senha: String
+) : Funcionario(nome, cpf, salario), Logavel {
 
-    override fun login(): Boolean = "senha 123" == senha
-    override fun autorizacao() {
-        TODO("Not yet implemented")
-    }
+    override fun calculoAuxilio(): Double = salario * 0.4
+
+    fun login(): Boolean = "senha 123" == senha
+
 }
+
